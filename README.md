@@ -1,7 +1,7 @@
 # TVHeadend-Script-TV-Guide
 Un progetto per acquisire la guida TV dei canali Italiani e mostrarla in [TVHeadend](https://tvheadend.org/).
 
-### Breve indicazione
+### Breve descrizione
 
 Basato su un precedente script creato da Mathias F. Svendsen ho riscrlitto lo script per le mie esigenze includendo miglioramenti complessivi nel codice. Per attivare/installare lo script procedete come segue:
 
