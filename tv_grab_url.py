@@ -38,7 +38,7 @@ parser.add_option("-c","--capabilities", dest="capabilities", action="store_true
 (options, args) = parser.parse_args()
 
 if options.description is False and options.capabilities is False:
-    url = "http://www.vuplus-community.net/rytec/rytecxmltvItaly.gz"
+    url = "http://www.vuplus-community.net/rytec/rytecIT_Basic.gz"
     
     # Scarico il file GZIP
     page = requests.get(url, headers=headerdesktop, timeout=timeoutconnection, stream=True)
