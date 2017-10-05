@@ -8,8 +8,7 @@ Basato su un precedente script creato da Mathias F. Svendsen ho riscritto lo scr
 * Copia lo script in /usr/bin/tv_grab_url
 * Assegnare i permessi 777 a tv_grab_url (chmod 777 tv_grab_url)
 * Riavviare TVHeadend (/etc/init.d/tvheadend restart)
-* Dalla WebGUI accedere al pannello Configuration > Channel > EPG Grabber > EPG Grabber Modules
- > selezionare: XMLTV: TV Grab by URL > Enable
+* Dalla WebGUI accedere al pannello Configuration > Channel > EPG Grabber > EPG Grabber Modules > selezionare: XMLTV: TV Grab by URL > Enable
     
 Ulteriori informazioni disponibili sul mio [Blog](https://www.andreadraghetti.it/tvheadend-script-guida-tv/).
 
