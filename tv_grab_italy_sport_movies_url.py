@@ -38,7 +38,7 @@ parser.add_option("-c","--capabilities", dest="capabilities", action="store_true
 (options, args) = parser.parse_args()
 
 if options.description is False and options.capabilities is False:
-    url = "http://www.vuplus-community.net/rytec/rytecIT_Basic.gz"
+    url = "http://www.vuplus-community.net/rytec/rytecIT_SportMovies.gz"
     
     # Scarico il file GZIP
     page = requests.get(url, headers=headerdesktop, timeout=timeoutconnection, stream=True)
@@ -53,6 +53,6 @@ if options.description is False and options.capabilities is False:
         
     print file_content
 elif options.description is True:
-    print "TV Grab by URL"
+    print "TV Italy Sport and Movies Grab by URL"
 elif options.capabilities is True:
     print "baseline"
