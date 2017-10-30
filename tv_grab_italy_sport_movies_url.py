@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # coding=utf-8
 # This file is part of TVHeadend Script Guida TV
 #
@@ -21,11 +21,10 @@
 # or write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-
+import io
 import os
-import gzip
+import lzma
 import requests
-from StringIO import StringIO
 from optparse import OptionParser
 
 headerdesktop = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)",
@@ -38,21 +37,21 @@ parser.add_option("-c","--capabilities", dest="capabilities", action="store_true
 (options, args) = parser.parse_args()
 
 if options.description is False and options.capabilities is False:
-    url = "http://www.vuplus-community.net/rytec/rytecIT_SportMovies.gz"
+    url = "http://www.vuplus-community.net/rytec/rytecIT_SportMovies.xz"
     
-    # Scarico il file GZIP
+    # Scarico il file XZ
     page = requests.get(url, headers=headerdesktop, timeout=timeoutconnection, stream=True)
-    compressedFile = StringIO()
+    compressedFile = io.BytesIO()
     compressedFile.write(page.content)
     compressedFile.seek(0)
     
-    # Decomprimo il file GZIP
-    decompressedFile = gzip.GzipFile(fileobj=compressedFile, mode='rb')
+    # Decomprimo il file XZ    
+    decompressedFile = lzma.LZMAFile(compressedFile, mode='r')
     
     file_content = decompressedFile.read()
-        
-    print file_content
+
+    print (file_content)
 elif options.description is True:
-    print "TV Italy Sport and Movies Grab by URL"
+    print ("TV Italy Sport and Movies Grab by URL")
 elif options.capabilities is True:
-    print "baseline"
+    print ("baseline")
