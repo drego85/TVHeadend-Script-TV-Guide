@@ -3,7 +3,16 @@ Un progetto per acquisire la guida TV dei canali Italiani e mostrarla in [TVHead
 
 ### Breve descrizione
 
-Basato su un precedente script creato da Mathias F. Svendsen ho riscritto lo script per le mie esigenze includendo miglioramenti complessivi nel codice. Per attivare e installare lo script procedete come segue:
+Basato su un precedente script creato da Mathias F. Svendsen ho riscritto lo script per le mie esigenze includendo miglioramenti complessivi nel codice. 
+
+#### Sofware Necessario
+
+* python3 
+* lzma
+
+#### Installazione
+
+Per attivare e installare lo script procedete come segue:
 
 * Copiare i tre file tv_grab_italy_basic_url.py, tv_grab_italy_sky_url.py e tv_grab_italy_sport_movies_url.py all'interno della directory /usr/bin/
 * Rinominare i tre file eliminando l'estensione (.py)
