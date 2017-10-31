@@ -29,7 +29,7 @@ from optparse import OptionParser
 
 headerdesktop = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)",
                  "Accept-Language": "it"}
-timeoutconnection = 10
+timeoutconnection = 120
 
 parser = OptionParser(version="%prog 1.0b")
 parser.add_option("-d","--description", action="store_true",dest="description",default=False, help="Prints the description of this script")
