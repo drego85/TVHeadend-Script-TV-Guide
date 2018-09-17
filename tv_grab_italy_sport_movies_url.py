@@ -22,7 +22,6 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import io
-import os
 import lzma
 import requests
 from optparse import OptionParser
