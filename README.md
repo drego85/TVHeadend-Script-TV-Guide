@@ -3,14 +3,22 @@ Un progetto per acquisire la guida TV dei canali Italiani e mostrarla in [TVHead
 
 #### Breve descrizione
 
-Basato su un precedente script creato da Mathias F. Svendsen ho riscritto lo script per le mie esigenze includendo miglioramenti complessivi nel codice. 
+Basato su un precedente script creato da Mathias F. Svendsen questo script permette di aggiungere le Guide TV Italiane in TVHeadend e i progetti ad esso correlati (es. Kodi).
 
 #### Sofware Necessario
 
-* python3 
-* lzma
+* python3
 
-#### Installazione
+#### Installazione Automatica
+
+* Copia il repository, o scaricare il file ZIP, nella propria Home Directory 
+* Aprite il terminale, recatevi nella directory contenente gli script
+* Eseguite il comando: _bash autoinstall.sh_
+* Ora gli script sono installati
+
+Questa procedura automatica è stata testata con Ubuntu, Debian e Raspibian.
+
+#### Installazione Manuale
 
 Per attivare e installare lo script procedete come segue:
 
@@ -23,7 +31,9 @@ Per attivare e installare lo script procedete come segue:
 Comandi brevi per inizializzare gli script:
 
 * sudo cp tv_grab_italy* /usr/bin/ 
-* sudo mv /usr/bin/tv_grab_italy_basic_url.py /usr/bin/tv_grab_italy_basic_url && sudo mv /usr/bin/tv_grab_italy_sky_url.py /usr/bin/tv_grab_italy_sky_url && sudo mv /usr/bin/tv_grab_italy_sport_movies_url.py /usr/bin/tv_grab_italy_sport_movies_url
+* sudo mv /usr/bin/tv_grab_italy_basic_url.py /usr/bin/tv_grab_italy_basic_url 
+* sudo mv /usr/bin/tv_grab_italy_sky_url.py /usr/bin/tv_grab_italy_sky_url
+* sudo mv /usr/bin/tv_grab_italy_sport_movies_url.py /usr/bin/tv_grab_italy_sport_movies_url
 * sudo chmod 777 /usr/bin/tv_grab_italy*
 * sudo /etc/init.d/tvheadend restart
 
