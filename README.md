@@ -14,7 +14,7 @@ Basato su un precedente script creato da Mathias F. Svendsen questo script perme
 * Copia il repository, o scaricare il file ZIP, nella propria Home Directory 
 * Aprite il terminale, recatevi nella directory contenente gli script
 * Eseguite il comando: _bash autoinstall.sh_
-* Ora gli script sono installati
+* Dalla WebGUI di TVHeadend accedere al pannello Configuration > Channel > EPG Grabber > EPG Grabber Modules > Selezionare e Attivare i tre Grabber riconoscibili dall'etichetta "XMLTV: TV Italy"
 
 Questa procedura automatica è stata testata con Ubuntu, Debian e Raspibian.
 
@@ -26,7 +26,7 @@ Per attivare e installare lo script procedete come segue:
 * Rinominare i tre file eliminando l'estensione (.py)
 * Assegnare i permessi 777 ai tre file (chmod 777 tv_grab_italy*)
 * Riavviare TVHeadend (/etc/init.d/tvheadend restart)
-* Dalla WebGUI accedere al pannello Configuration > Channel > EPG Grabber > EPG Grabber Modules > selezionare i tre Grabber riconoscibili dall'etichetta "XMLTV: TV Italy"
+* Dalla WebGUI accedere al pannello Configuration > Channel > EPG Grabber > EPG Grabber Modules > Selezionare e Attivare  i tre Grabber riconoscibili dall'etichetta "XMLTV: TV Italy"
 
 Comandi brevi per inizializzare gli script:
 
