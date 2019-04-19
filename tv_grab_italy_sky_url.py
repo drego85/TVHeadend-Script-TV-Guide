@@ -49,7 +49,8 @@ if options.description is False and options.capabilities is False:
     
     file_content = decompressedFile.read()
 
-    print (file_content)
+    print(file_content.decode("utf8"))
+
 elif options.description is True:
     print ("TV Italy Sky Grab by URL")
 elif options.capabilities is True:
